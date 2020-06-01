@@ -17,6 +17,8 @@ echo "Names: $name1, $name2, $name3"
 
 # Print the username on the same line
 read -p 'username: ' user_var # -p is a flag here 
+read -sp 'password: ' pass_var
+echo "password: $pass_var"
 echo "username: $user_var"
 
 # Example
