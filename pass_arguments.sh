@@ -30,3 +30,6 @@ echo ${args[0]} ${args[1]} ${args[2]}
 # We can return all the value by just this also. Above echo is for reading arguments
 # by there index
 echo $@
+
+# We can check this for when we want to know the number of arguments is passed
+echo $#
