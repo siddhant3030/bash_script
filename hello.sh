@@ -18,6 +18,7 @@ echo $PWD
 # This variables are by default present in linux.
 
 # User variable are defined like this and you can use that variable using $.
+# Variable should not start with number. 
 name=Siddhant
 echo The name is $name
 
