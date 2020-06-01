@@ -11,3 +11,13 @@ echo "Hello World"
 # 2. User Variable:- variable which is used locally
 
 echo $BASH
+echo $BASH_VERSION
+echo $HOME
+echo $PWD
+
+# This variables are by default present in linux.
+
+# User variable are defined like this and you can use that variable using $.
+name=Siddhant
+echo The name is $name
+
