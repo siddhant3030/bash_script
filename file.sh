@@ -4,6 +4,7 @@
 echo -e "Enter name of the file : \c"
 read file_name
 
+# -d to check the directory
 if [ -e $file_name ]
 then
     echo "$file_name found"
