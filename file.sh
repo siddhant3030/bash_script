@@ -5,6 +5,10 @@ echo -e "Enter name of the file : \c"
 read file_name
 
 # -d to check the directory
+# -c to check character special
+# -s to check if file is empty or not
+# -r to check read permission
+# -w to check write permission
 if [ -e $file_name ]
 then
     echo "$file_name found"
