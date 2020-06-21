@@ -2,6 +2,13 @@
          {erts,"10.7.2"},
          [{kernel,"6.5.2"},
           {stdlib,"3.12.1"},
+          {crypto,"4.6.5"},
+          {cowlib,"2.9.1"},
+          {asn1,"5.0.12"},
+          {public_key,"1.7.2"},
+          {ssl,"9.6.2"},
+          {ranch,"1.7.1"},
+          {cowboy,"2.8.0"},
           {simple_rest,"0.1.0"},
           {sasl,"3.4.2"},
           {runtime_tools,"1.14"}]}. 
