@@ -11,4 +11,8 @@ defmodule PushNotification.Pigeon do
       mode: @push_mode
     )
   end
+
+  def fcm_config do
+    Pigeon.FCM.Config.new(name: :fcm_default, key: System.get_env("priv/cert/AuthKey"))
+  end
 end

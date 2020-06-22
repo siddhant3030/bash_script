@@ -34,5 +34,4 @@ defmodule PushNotification.Application do
     PushNotificationWeb.Endpoint.config_change(changed, removed)
     :ok
   end
-  AuthKey_HN3FXQ7KHA.p8
 end
