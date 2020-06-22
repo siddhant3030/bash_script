@@ -43,7 +43,7 @@ defmodule PushNotification.MixProject do
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
-      {:pushex, "~> 0.2"},
+      {:pigeon, "~> 1.5.1"},
       {:kadabra, "~> 0.4.4"}
     ]
   end

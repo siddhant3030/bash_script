@@ -22,7 +22,10 @@ defmodule PushNotification.Application do
     # See https://hexdocs.pm/elixir/Supervisor.html
     # for other strategies and supported options
     opts = [strategy: :one_for_one, name: PushNotification.Supervisor]
-    Supervisor.start_link(children, opts)
+    with {:ok, sup} <- Supervisor.start_link(children, opts),
+        {:ok, _} <- Application.ensure_all_started(:pigeon, :permanent) do
+      {:ok, sup}
+    end
   end
 
   # Tell Phoenix to update the endpoint configuration
@@ -31,4 +34,5 @@ defmodule PushNotification.Application do
     PushNotificationWeb.Endpoint.config_change(changed, removed)
     :ok
   end
+  AuthKey_HN3FXQ7KHA.p8
 end

@@ -27,11 +27,16 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 config :pigeon, :apns,
-     apns_default: %{
-       cert: "cert.pem",
-       key: "key_unencrypted.pem",
-       mode: :dev
-     }
+   apns_default: %{
+     key: "priv/cert/AuthKey_HN3FXQ7KHA.p8",
+     key_identifier: "HN3FXQ7KHA",
+     team_id: "29R36ZN6GZ",
+     mode: :dev
+   }
+
+config :pigeon, workers: [
+  {PushNotification.Pigeon, :apns_config}
+]
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
