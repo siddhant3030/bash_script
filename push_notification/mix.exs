@@ -42,7 +42,9 @@ defmodule PushNotification.MixProject do
       {:telemetry_poller, "~> 0.4"},
       {:gettext, "~> 0.11"},
       {:jason, "~> 1.0"},
-      {:plug_cowboy, "~> 2.0"}
+      {:plug_cowboy, "~> 2.0"},
+      {:pushex, "~> 0.2"},
+      {:kadabra, "~> 0.4.4"}
     ]
   end
 
