@@ -1,5 +1,5 @@
 %% coding: utf-8
-%% script generated at {2020,6,21} {21,22,18}
+%% script generated at {2020,6,22} {7,49,56}
 {script,
     {"simple_rest_release","1"},
     [{preLoaded,
@@ -93,7 +93,7 @@
           cowboy_static,cowboy_stream,cowboy_stream_h,cowboy_sub_protocol,
           cowboy_sup,cowboy_tls,cowboy_tracer_h,cowboy_websocket]},
      {path,["$ROOT/lib/simple_rest-0.1.0/ebin"]},
-     {primLoad,[simple_rest_app,simple_rest_sup]},
+     {primLoad,[rest_time_handler,simple_rest_app,simple_rest_sup]},
      {path,["$ROOT/lib/sasl-3.4.2/ebin"]},
      {primLoad,
          [alarm_handler,erlsrv,format_lib_supp,misc_supp,rb,rb_format_supp,
@@ -332,7 +332,8 @@
                   [{description,"New project"},
                    {vsn,"0.1.0"},
                    {id,[]},
-                   {modules,[simple_rest_app,simple_rest_sup]},
+                   {modules,
+                       [rest_time_handler,simple_rest_app,simple_rest_sup]},
                    {registered,[simple_rest_sup]},
                    {applications,[kernel,stdlib,cowboy]},
                    {included_applications,[]},
