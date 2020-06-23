@@ -8,11 +8,8 @@ defmodule PushNotification.Pigeon do
       key: "priv/cert/AuthKey_HN3FXQ7KHA.p8",
       key_identifier: "HN3FXQ7KHA",
       team_id: "29R36ZN6GZ",
-      mode: @push_mode
+      mode: @push_mode,
+      name: :aplom
     )
-  end
-
-  def fcm_config do
-    Pigeon.FCM.Config.new(name: :fcm_default, key: System.get_env("priv/cert/AuthKey"))
   end
 end

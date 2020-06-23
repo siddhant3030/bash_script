@@ -36,12 +36,12 @@ config :pigeon, :apns,
 
 config :pigeon, :fcm,
   fcm_default: %{
-    key: "priv/cert/AuthKey.p8"
+    key: "AAAAta5jYCE:APA91bEou1QR8tOhAbr-owXajmFtQE6TULijeQuBnBFJTP7xQ6IOHVtnc_rFpU1FM-JEB-p8OVua2N0QaGdAF2Z-euRdofkjD2qJvh7l_5qeyVX5gbM34qMHSIGeGGLwtFUKlTFvAzd-"
   }
 
 config :pigeon, workers: [
-  {PushNotification.Pigeon, :apns_config},
-  {PushNotification.Pigeon, :fcm_config}
+  {PushNotification.Pigeon, :apns_config}
+  # {PushNotification.Pigeon, :fcm_config}
 ]
 
 # Import environment specific config. This must remain at the bottom
