@@ -22,6 +22,11 @@ config :push_notification, PushNotificationWeb.Endpoint,
   check_origin: false,
   watchers: []
 
+config :pigeon, :fcm,
+  fcm_default: %{
+    key: "AAAAoCjRqUo:APA91bGCSTWDpGOuVEXO6XH3ibBZji_EhRSNY3AJSOfhlqM8fczlDRURfb5Jxw9SzbkRKFqF5eVQZ3E40Y9MEt_eA6LMlpO4_nC5MnZet93H531NCiPU8QdXMzvBp7R1MbLzCGPieUfZ"
+  }
+
 # ## SSL Support
 #
 # In order to use HTTPS in development, a self-signed

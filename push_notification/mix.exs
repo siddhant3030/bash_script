@@ -44,7 +44,8 @@ defmodule PushNotification.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:pigeon, "~> 1.5.1"},
-      {:kadabra, "~> 0.4.4"}
+      {:kadabra, "~> 0.4.4"},
+      {:google_api_firebase_dynamic_links, "~> 0.10.0"}
     ]
   end
 
